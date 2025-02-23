@@ -1,0 +1,22 @@
+
+
+#--------------main configutrations ---------
+input_video_file_name: "supermarket_trimmed.mp4"
+draw: True
+show_output: False
+save_output : True
+if_save_output_true_TimePeriod: 1000
+
+# -----yolo model configurations ------------
+yolo_confidence_score : 0.35
+yolo_required_class_ids : [0]
+yolo_input_img_size : 640
+
+# ------- deepsort configurations -----------
+max_cosine_dist : 0.2
+nms_max_overlap: 1.0
+max_iou_distance : 0.7
+max_age : 70
+n_init : 3
+nn_budget : 100
+use_cuda_for_deepsort : False
